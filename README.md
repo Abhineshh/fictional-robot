@@ -56,7 +56,8 @@ npm install
 PORT=5000
 DB_URL= "your mongodburl"
 ```
-4. Start the Express server:
+4. Create a folder called "employeePictures" to save the employee pictures
+5. Start the Express server:
 ```
 npm start
 ```
@@ -71,7 +72,8 @@ cd ..
 ```
 npm install
 ```
-4.start the vite development server:
+
+3.start the vite development server:
 ```
 npm run dev
 ```
