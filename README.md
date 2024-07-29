@@ -2,6 +2,13 @@
 
 The Employee Management System is a full-stack web application built with React (using Vite) on the frontend and Express.js on the backend. The application allows an admin to log in, register, create new employees, and edit employee details.
 
+### Video Explanation of the Application
+
+<video width="320" height="240" controls>
+  <source src="videodocs/recordedvideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Features
 
 - Admin Login and Registration
