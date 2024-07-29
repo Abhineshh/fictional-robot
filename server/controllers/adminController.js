@@ -25,7 +25,6 @@ module.exports.login = async (req, res, next) => {
 
 module.exports.register = async(req,res,next) => {
     try{
-        console.log(req.body)
         const {adminname, email,password} = req.body;
         
         const emailCheck = await Admin.findOne({email});

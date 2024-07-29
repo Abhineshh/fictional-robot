@@ -235,7 +235,7 @@ function EmployeeList() {
                   <tr key={index}>
                     <td className='border-2 border-slate-400 text-center'>{data._id}</td>
                     <td className='border-2 border-slate-400 text-center'>
-                      <img src={`/employeePictures/${data.imageFile}`} alt={`${data.name}`} className=' w-fit h-fit' />
+                      <img src={`./${data.imageFile}`} alt={`${data.name}`} className=' w-fit h-fit' /> {console.log(data.imageFile)}
                     </td>
                     <td className='border-2 border-slate-400 text-center'>{data.name}</td>
                     <td className='border-2 border-slate-400 text-center w-fit'>{data.email}</td>

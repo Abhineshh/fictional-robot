@@ -1,11 +1,12 @@
 const router = require('express').Router();
 const multer = require('multer');
 const path = require('path');
+
 const { createEmployee, editEmployee, getEmployeeList, searchEmployee, deleteEmployee } = require("../controllers/empController");
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, "employeePictures/");
+        cb(null, "employeePictures");
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname));

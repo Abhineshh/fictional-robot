@@ -52,19 +52,22 @@ function EmployeeCreate() {
     }
 
     try {
-      const response = await axios.post(createEmployeeRoute, formDataToSend, {
+      console.log(formDataToSend,formData)
+      const response = await axios.post(createEmployeeRoute,formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
-      console.log(response)
-      if(true){
-        toast.success("Employee data uploaded successfully")
+
+      if (response.status === 201) {
+        toast.success("Employee data uploaded successfully");
+      } else if (response.status === 400) {
+        toast.error("Employee already registered");
       }
       console.log('Server Response:', response.data);
     } catch (error) {
       console.error('Error uploading data:', error);
-      toast.error("Employee is already registered")
+      toast.error("Error creating the employee");
     }
   };
 
